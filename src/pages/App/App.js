@@ -20,18 +20,18 @@ class App extends React.Component {
 
   render() {
     return (
-      <div>
-        <header>
+      <div className='main'>
+        <div className='nav'>
           {routeModules.map(route => {
             return <Link to={route.path}>{route.name}</Link>
           })}
-        </header>
+        </div>
 
-        <main>
+        <div className='content'>
           {routeModules.map(route => {
             return <Route path={route.path} key={route.path} exact component={route.component}></Route>
           })}
-        </main>
+        </div>
       </div>
     )
   }

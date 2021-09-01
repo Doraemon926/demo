@@ -11,3 +11,31 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+#root{
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+a:link,a:visited,a:hover,a:active{
+  color:aqua;
+  text-decoration:none;
+}
+a{
+  display:block;/*整体变为可点击区域，而不只是字*/
+}
+.main{
+  display: -webkit-flex; /* Safari */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  
+  .nav{
+    color: #000;
+  }
+  .content{
+
+  }
+}
